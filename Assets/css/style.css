@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+}
+
+/*styling for body*/
+body {
+    position: relative;
+    font-family: 'Courier New Sans Serif', Courier, monospace;
+    font-size: 18px;
+    line-height: 27px;
+    height: auto;
+       
+}
+
+/*header styling*/
+.navbar{
+    border-bottom: 5px solid #04c2c9;
+    background-color:#1b242f;
+}
+
+.navbar-brand {
+    font-size: 36px;
+}
+
+.nav-link {
+    font-size: 22px;
+    color: #e31b6d;
+}
+
+.container {
+    margin-top: 20px;
+    height: auto;
+}
+
+.fa-superpowers{
+    color: white;
+    margin-right: 20px;
+}
+
+/*Styling Carousel*/
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.carousel-caption {
+    bottom: 200px;
+}
+
+.carouselTitle {
+    font-size: 60px;
+    color: #04c2c9;
+    font-weight: bolder;
+}
+
+.carouselPara {
+    font-size: 28px;
+}
+
+/*Styling Content*/
+h1 {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.lineTitle {
+    width: 10%;
+    border: 3px solid #1b242f;
+    background: #1b242f;
+}
+
+#portPhoto {
+    border-radius:50%;
+    
+}
+
+.card-title {
+    color: #04c2c9;
+}
+
+.imgDiv {
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    padding:10px;
+    background: #1b242f;
+    color: #acacac;
+}
+
+.bioDiv{
+    margin-top: 20px;
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+}
+
+
+/*footer styling*/
+.footer-margin {
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    background-color: #1b242f;
+    color: white;
+  }
+
+ /*Media Queries*/
+ /*@media screen and (min-width: 834px){
+     .container {
+         height: 1080px;
+     }
+}*/
+
+ @media screen and (max-width: 780px){
+    .container {
+        width: 100%;
+    }
+
+    .img-fluid {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .col {
+        width: 100%;
+    }
+}
