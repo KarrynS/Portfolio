@@ -9,4 +9,4 @@ HTML, CSS, JavaScript, jQuery
 https://karryns.github.io/Weather-Dashboard/
 
 # Screenshot
-<img src=".Assets/img/ScreenShot.png">
+<img src="Assets/img/ScreenShot.png">
