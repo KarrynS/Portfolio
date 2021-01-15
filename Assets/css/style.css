@@ -1,6 +1,9 @@
 * {
     box-sizing: border-box;
 }
+main {
+    display: grid;
+}
 
 /*styling for body*/
 body {
@@ -37,24 +40,40 @@ body {
     margin-right: 20px;
 }
 
+.sr-only {
+    color: #e31b6d;
+}
+
 /*Styling Carousel*/
 .img-fluid {
     max-width: 100%;
     height: auto;
 }
 
-.carousel-caption {
-    bottom: 200px;
-}
-
+/*
 .carouselTitle {
-    font-size: 60px;
+    font-size: 30px;
     color: #04c2c9;
     font-weight: bolder;
+    position: fixed;
 }
 
 .carouselPara {
-    font-size: 28px;
+    font-size: 22px;
+    position:fixed;
+}*/
+.carousel-caption h5 {
+    font-weight: bolder;
+    color: #04c2c9;
+    font-size: 1.2em; /* small size since this is the default in Bootstrap */
+    text-align: center;
+    vertical-align: center;
+}
+
+.carousel-caption p {
+    font-size: 1em; /* small size since this is the default in Bootstrap */
+    text-align:center;
+    vertical-align: center;
 }
 
 /*Styling Content*/
@@ -72,10 +91,10 @@ h1 {
 
 #portPhoto {
     border-radius:50%;
-    
 }
 
 .card-title {
+    padding-top: 20x;
     color: #04c2c9;
 }
 
@@ -84,7 +103,7 @@ h1 {
     text-align: center;
     width: 80%;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 30px;
     padding:10px;
     background: #1b242f;
     color: #acacac;
@@ -95,8 +114,20 @@ h1 {
     justify-content: center;
     text-align: center;
     width: 80%;
+    margin: auto;
 }
 
+.card-text {
+    margin: auto;
+}
+
+.icon {
+    color: #e31b6d;
+}
+
+.col-md-8 {
+    padding-top: 10px;
+}
 
 /*footer styling*/
 .footer-margin {
@@ -105,14 +136,14 @@ h1 {
     position: absolute;
     background-color: #1b242f;
     color: white;
+    border-top: 5px solid #04c2c9;
   }
 
+.githubLink {
+    color: #e31b6d;
+}
+
  /*Media Queries*/
- /*@media screen and (min-width: 834px){
-     .container {
-         height: 1080px;
-     }
-}*/
 
  @media screen and (max-width: 780px){
     .container {
@@ -129,3 +160,26 @@ h1 {
         width: 100%;
     }
 }
+
+@media (min-width: 576px) { /* Small devices (landscape phones, 576px and up)*/
+    .carousel-caption h5 { font-size: 1.3em;}
+    .carousel-caption p {font-size: 1.1em;}  
+  }
+  @media (min-width: 768px) {/* Medium devices (tablets, 768px and up)*/
+    .carousel-caption h5 { font-size: 1.4em;}
+    .carousel-caption p {font-size: 1.2em;}  
+    .caption-large {margin-bottom: 150px;}
+    .carousel-caption-large h5 { font-size: 1.5em;}
+    .carousel-caption-large p {font-size: 1.3em;} 
+  }
+  @media (min-width: 992px) { /* Large devices (desktops, 992px and up)*/
+    .carousel-caption h5 { font-size: 1.6em;}
+    .carousel-caption p {font-size: 1.4em;} 
+    .caption-large {margin-bottom: 200px;} 
+  }
+  @media (min-width: 1200px) { /* Extra large devices (large desktops, 1200px and up) */
+    .carousel-caption h5 { font-size: 1.7em;}
+    .carousel-caption p {font-size: 1.5em;} 
+    .caption-large {margin-bottom: 220px;} 
+  }
+  
