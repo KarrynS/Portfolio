@@ -25,7 +25,11 @@ body {
     font-size: 36px;
 }
 
-.nav-link {
+a.nav-link.active {
+    color: #e31b6d !important;
+}
+
+.navbar-nav > .active  a{
     font-size: 22px;
     color: #e31b6d;
 }
@@ -40,7 +44,7 @@ body {
     margin-right: 20px;
 }
 
-.sr-only {
+.nav-item a{
     color: #e31b6d;
 }
 
@@ -87,6 +91,7 @@ h1 {
     width: 10%;
     border: 3px solid #1b242f;
     background: #1b242f;
+
 }
 
 #portPhoto {
