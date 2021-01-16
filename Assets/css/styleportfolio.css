@@ -28,6 +28,7 @@ h1 {
     width: 80%;
     margin: auto;
     padding: 10px;
+    margin-top: 40px;
 }
 
 .h-100 {
@@ -36,6 +37,10 @@ h1 {
     background: #1b242f;
 }
 
+.animateOne {
+    position: absolute;
+    left: 0;
+}
 
 /*Styling Project Cards*/
 .card-text {
