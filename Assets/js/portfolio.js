@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    $(".animateOne").animate({left: "45%"});
 
 
     //Hover function for cardOne
