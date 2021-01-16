@@ -13,11 +13,22 @@ h1 {
 }
 
 .lineTitle {
+    
     width: 10%;
     border: 3px solid #1b242f;
     background: #1b242f;
+    
 }
 
+.animateOne {
+    position: absolute;
+    left: 0;
+}
+
+.animateTwo {
+    right: 0;
+    position: absolute;
+}
 /*Styling Links section*/
 .contact-grid {
     margin: 0 auto;
