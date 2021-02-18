@@ -196,7 +196,7 @@ var cardFiveReplace = function() {
         cardImg.attr("src", "Assets/img/SS-DayPlanner.png");
         cardImg.attr("alt", "Day Planner screenshot");
     var cardDiv = $("<div class='card-body'>"); 
-    var cardTitle = $("<h5 class='card-title'>RWork Day Scheduler</h5>");
+    var cardTitle = $("<h5 class='card-title'>Work Day Scheduler</h5>");
     var cardhr = $("<hr class='cardhr'>");
     var cardText = $("<p class='card-text' id='cardText'>");
     cardText.text("A simple browser run application that allows user to save events for each hour of the work day. The app is set up to have past, present and future time blocks where events can be stored and cleared from local storage.");
@@ -206,5 +206,46 @@ var cardFiveReplace = function() {
 
 }
 cardFive.mouseleave(cardFiveReplace);
+
+//Hover function for cardSix
+var cardSix = $("#cardSix");
+
+var cardSixCollapse = function() {
+    cardSix.empty();
+    var cardDivHeight = $("<div class='card h-100'>");
+    var cardDiv = $("<div class='card-body'>");
+    var cardTitle = $("<h5 class='card-title'>Eat-Da-Burger</h5>");
+    var cardhr = $("<hr class='cardhr'>");
+    var cardText = $("<p class='card-text' id='cardText'>");
+    cardText.text("Node.js, mySQL, Express, Handlebars, Heroku and ORM");
+    var cardDemoLink = $("<a class='btn' target='_blank'>");
+        cardDemoLink.attr("href", "-------enter heroku site");
+        cardDemoLink.text("Live Demo");
+    var cardGithubLink = $("<a class='btn' target='_blank'>");
+        cardGithubLink.attr("href", "https://github.com/KarrynS/Eat-Da-Burger.git");
+        cardGithubLink.text("View Source Code");
+    cardDiv.append(cardTitle, cardhr, cardText, cardText, cardDemoLink, cardGithubLink);
+    cardDivHeight.append(cardDiv);
+    cardSix.append(cardDiv);
+}
+cardSix.mouseenter(cardSixCollapse);
+
+var cardSixReplace = function() {
+    cardSix.empty();
+    var cardDivHeight = $("<div class='card h-100'>");
+    var cardImg = $("<img class='card-img-top'>");
+        cardImg.attr("src", "Assets/img/SS-Eat-Da-Burger.png");
+        cardImg.attr("alt", "Eat-Da-Bruger app");
+    var cardDiv = $("<div class='card-body'>"); 
+    var cardTitle = $("<h5 class='card-title'>Eat-Da-Burger</h5>");
+    var cardhr = $("<hr class='cardhr'>");
+    var cardText = $("<p class='card-text' id='cardText'>");
+    cardText.text("A restaraunt app that lets users input the names of burgers they'd like to eat and devour them. This app will store every burger whether eaten or not in a database.");
+    cardDiv.append(cardTitle, cardhr, cardText);
+    cardDivHeight.append(cardImg, cardDiv)
+    cardSix.append(cardDivHeight);
+
+}
+cardSix.mouseleave(cardSixReplace);
 
 });
