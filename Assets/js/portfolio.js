@@ -222,7 +222,7 @@ var cardSixCollapse = function() {
         cardDemoLink.attr("href", "https://karryns.github.io/Eat-Da-Burger/");
         cardDemoLink.text("Live Demo");
     var cardGithubLink = $("<a class='btn' target='_blank'>");
-        cardGithubLink.attr("href", "https://github.com/KarrynS/Eat-Da-Burger.git");
+        cardGithubLink.attr("href", "https://limitless-eyrie-77145.herokuapp.com/");
         cardGithubLink.text("View Source Code");
     cardDiv.append(cardTitle, cardhr, cardText, cardText, cardDemoLink, cardGithubLink);
     cardDivHeight.append(cardDiv);
