@@ -219,10 +219,10 @@ var cardSixCollapse = function() {
     var cardText = $("<p class='card-text' id='cardText'>");
     cardText.text("Node.js, mySQL, Express, Handlebars, Heroku and ORM");
     var cardDemoLink = $("<a class='btn' target='_blank'>");
-        cardDemoLink.attr("href", "https://karryns.github.io/Eat-Da-Burger/");
+        cardDemoLink.attr("href", "https://polar-spire-98874.herokuapp.com/");
         cardDemoLink.text("Live Demo");
     var cardGithubLink = $("<a class='btn' target='_blank'>");
-        cardGithubLink.attr("href", "https://limitless-eyrie-77145.herokuapp.com/");
+        cardGithubLink.attr("href", "https://github.com/KarrynS/Eat-Da-Burger.git");
         cardGithubLink.text("View Source Code");
     cardDiv.append(cardTitle, cardhr, cardText, cardText, cardDemoLink, cardGithubLink);
     cardDivHeight.append(cardDiv);
