@@ -50,15 +50,15 @@ $(document).ready(function() {
         cardTwo.empty();
         var cardDivHeight = $("<div class='card h-100'>");
         var cardDiv = $("<div class='card-body'>");
-        var cardTitle = $("<h5 class='card-title'>Weather Dashboard</h5>");
+        var cardTitle = $("<h5 class='card-title'>Group Project | Well❤️Me</h5>");
         var cardhr = $("<hr class='cardhr'>");
         var cardText = $("<p class='card-text' id='cardText'>");
-        cardText.text("HTML, CSS, javaSript, JQuery, Third Party API's, Local Storage");
+        cardText.text("Node, Express, Handlebars.js, Sequelize ORM, MySQL, Heroku, API, HTML, CSS, JavaScript, JQuery");
         var cardDemoLink = $("<a class='btn' target='_blank'>");
-            cardDemoLink.attr("href", "https://karryns.github.io/Weather-Dashboard/");
+            cardDemoLink.attr("href", "https://wellme.herokuapp.com/");
             cardDemoLink.text("Live Demo");
         var cardGithubLink = $("<a class='btn' target='_blank'>");
-            cardGithubLink.attr("href", "https://github.com/KarrynS/Weather-Dashboard.git");
+            cardGithubLink.attr("href", "https://github.com/KarrynS/WellMe.git");
             cardGithubLink.text("View Source Code");
         cardDiv.append(cardTitle, cardhr, cardText, cardText, cardDemoLink, cardGithubLink);
         cardDivHeight.append(cardDiv);
@@ -70,19 +70,20 @@ $(document).ready(function() {
         cardTwo.empty();
         var cardDivHeight = $("<div class='card h-100'>");
         var cardImg = $("<img class='card-img-top'>");
-            cardImg.attr("src", "Assets/img/SS-WeatherDashboard.png");
-            cardImg.attr("alt", "weather dashboard screenshot");
+            cardImg.attr("src", "Assets/img/wellme.png");
+            cardImg.attr("alt", "WellMe app");
         var cardDiv = $("<div class='card-body'>"); 
-        var cardTitle = $("<h5 class='card-title'>Weather Dashboard</h5>");
+        var cardTitle = $("<h5 class='card-title'>Group Project | Well❤️Me</h5>");
         var cardhr = $("<hr class='cardhr'>");
         var cardText = $("<p class='card-text' id='cardText'>");
-        cardText.text("A weather dashboard built for travellers allowing them to see the weather outlook for cities around the world to help them plan their trip.");
+        cardText.text("A full stack application that allows users to track their wellness journey and reach their fitness goals faster");
         cardDiv.append(cardTitle, cardhr, cardText);
         cardDivHeight.append(cardImg, cardDiv)
         cardTwo.append(cardDivHeight);
-
     }
     cardTwo.mouseleave(cardTwoReplace);
+
+    
 
     //Hover function for cardThree
     var cardThree = $("#cardThree");
@@ -327,4 +328,44 @@ $(document).ready(function() {
     }
     cardEight.mouseleave(cardEightReplace);
 
+    //Hover function for cardNine
+    var cardNine= $("#cardNine");
+
+    var cardNineCollapse = function() {
+        cardNine.empty();
+        var cardDivHeight = $("<div class='card h-100'>");
+        var cardDiv = $("<div class='card-body'>");
+        var cardTitle = $("<h5 class='card-title'>Weather Dashboard</h5>");
+        var cardhr = $("<hr class='cardhr'>");
+        var cardText = $("<p class='card-text' id='cardText'>");
+        cardText.text("HTML, CSS, javaSript, JQuery, Third Party API's, Local Storage");
+        var cardDemoLink = $("<a class='btn' target='_blank'>");
+            cardDemoLink.attr("href", "https://karryns.github.io/Weather-Dashboard/");
+            cardDemoLink.text("Live Demo");
+        var cardGithubLink = $("<a class='btn' target='_blank'>");
+            cardGithubLink.attr("href", "https://github.com/KarrynS/Weather-Dashboard.git");
+            cardGithubLink.text("View Source Code");
+        cardDiv.append(cardTitle, cardhr, cardText, cardText, cardDemoLink, cardGithubLink);
+        cardDivHeight.append(cardDiv);
+        cardNine.append(cardDiv);
+    }
+    cardNine.mouseenter(cardNineCollapse);
+
+    var cardNineReplace = function() {
+        cardNine.empty();
+        var cardDivHeight = $("<div class='card h-100'>");
+        var cardImg = $("<img class='card-img-top'>");
+            cardImg.attr("src", "Assets/img/SS-WeatherDashboard.png");
+            cardImg.attr("alt", "weather dashboard screenshot");
+        var cardDiv = $("<div class='card-body'>"); 
+        var cardTitle = $("<h5 class='card-title'>Weather Dashboard</h5>");
+        var cardhr = $("<hr class='cardhr'>");
+        var cardText = $("<p class='card-text' id='cardText'>");
+        cardText.text("A weather dashboard built for travellers allowing them to see the weather outlook for cities around the world to help them plan their trip.");
+        cardDiv.append(cardTitle, cardhr, cardText);
+        cardDivHeight.append(cardImg, cardDiv)
+        cardNine.append(cardDivHeight);
+
+    }
+    cardNine.mouseleave(cardNineReplace);
 });
