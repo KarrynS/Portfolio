@@ -55,7 +55,7 @@ $(document).ready(function() {
         var cardText = $("<p class='card-text' id='cardText'>");
         cardText.text("Node, Express, Handlebars.js, Sequelize ORM, MySQL, Heroku, API, HTML, CSS, JavaScript, JQuery");
         var cardDemoLink = $("<a class='btn' target='_blank'>");
-            cardDemoLink.attr("href", "https://wellme.herokuapp.com/");
+            cardDemoLink.attr("href", "https://lkblt-project2.herokuapp.com/");
             cardDemoLink.text("Live Demo");
         var cardGithubLink = $("<a class='btn' target='_blank'>");
             cardGithubLink.attr("href", "https://github.com/KarrynS/WellMe.git");
